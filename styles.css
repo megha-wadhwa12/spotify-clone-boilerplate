@@ -1,6 +1,15 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-size: 12px;
 }
 
 .section1{
@@ -69,8 +78,8 @@
     background-color: black;
     display: flex;
     flex-direction: column;
-    width: 250px;
-    height: 100%;
+    width: 300px;
+    height: 101vh;
 
 
 }
@@ -134,6 +143,7 @@
     border-radius: 5px;
     display: flex;
     align-items: center;
+    border: none;
     /* justify-content: space-between; */
     width: 250px;
     color: white;
@@ -172,5 +182,81 @@
 
 .box{
     display: flex;
+    flex-wrap: nowrap;
     /* justify-content:; */
+}
+.insidediv img{
+    width: 100px;
+    margin: 20px;
+}
+
+.insidediv{
+    margin: 0 15px 0px 14px;
+    background-color: #181818;
+    width: 160px;
+    height: 200px;
+}
+h4{
+    padding-left: 10px;
+}
+.insidediv p{
+    padding: 2px;
+    padding-left: 40px;
+    font-size: small;
+}
+
+.play{
+    width: 100%;
+    top:0;
+    background-color: #181818;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    position: sticky;
+    /* bottom:0; */
+    /* width: 1000px; */
+}
+.divleft{
+    display: flex;
+    align-items: center;
+}
+#image1{
+    width: 80px;
+    height: 50px;
+    padding: 10px 20px;
+}
+#image2{
+    width: 20px;
+    height: 30px;
+}
+
+
+.divmiddle img{
+    display: flex;
+    align-items: center;
+    width: 400px;
+}
+
+.divright img{
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+
+.green{
+    color: black;
+    background-color: #1ED760;
+}
+
+.green p{
+    margin-left: 1000px;
+
+}
+/* 
+#likedsong{
+    position: absolute;
+} */
+#heartinside{
+    position: absolute;
 }
