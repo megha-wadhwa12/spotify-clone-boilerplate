@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.section1{
+    display: flex;
+    /* justify-content: space-between; */
+    background-color: #202020;
+    color: white;
+}
+.top{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    width: 1100px;
+    height: 40px;
+    /* border: 2px solid white; */
+}
+
+/* #btn{
+    height: 30px;
+    width: 100px;
+    background-color: black;
+    position: absolute;
+    border-radius: 40px;
+    top:10px;
+    right: 20px;
+} */
+#leftright{
+    width: 80px;
+    padding: 20px;
+}
+
+#angel{
+
+    /* width: 30px; */
+    border-radius: 50%;
+    /* top:20px;
+    margin: 20px; */
+}
+.angel img{
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content:space-between ; */
+    align-items: center;
+    margin-top: 10px;
+    height: 30px;
+    margin-right: 20px;
+    overflow: hidden;
+    /* border: 2px solid white; */
+}
+.angel{
+    /* border: 2px solid white; */
+    display: flex;
+    /* flex-shrink: ; */
+    overflow:visible;
+    justify-content: center;
+    margin-right: 0;
+    /* width:30px; */
+}
+.div1 .div2 .div3{
+    width: 10px;
+}
+
+
+.side{
+    /* position: fixed; */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 100%;
+
+
+}
+.spotifylogo img{
+    width: 100px;
+    height: auto;
+    padding: 20px;
+}
+/* ,.spotifylogo{
+    /* padding: 20px; */
+
+.main{
+    background-color: #202020;
+    /* width: 100vh;
+    height: 100vh; */
+}
+/* 
+.top div img{
+    z-index: 10;
+} */
+
+.sidecontent div img{
+    width: 20px;
+    margin:0 10px 0 10px;
+
+
+}
+.sidecontent div p{
+    font-size: 14px;
+}
+.content{
+    /* margin:0 10px 0 10px; */
+    padding: 8px;
+    display: flex;
+    /* justify-content: space-evenly; */
+}
+.sidecontent{
+    align-items: center;
+}
+
+.types{
+    padding: 8px;
+}
+
+.install{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+.install img{
+    width: 20px;
+    margin: 20px 10px;
+}
+
+.goodmorning{
+    margin:50px 0 10px 20px;
+}
+
+.button button{
+    background-color: #303030;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    width: 250px;
+    color: white;
+
+    /* height: 40px; */
+    margin: 10px;
+}
+
+.button{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-bottom: 20px;
+    /* width: 500px; */
+    /* height: 80px; */
+}
+.playlists{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.button img{
+    /* align-items: center; */
+    /* padding: 5px; */
+    width: 70px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.button p{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.box{
+    display: flex;
+    /* justify-content:; */
+}
