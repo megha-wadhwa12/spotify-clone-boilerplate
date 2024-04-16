@@ -1,262 +1,495 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     color: white;
-    font-family: 'Poppins', sans-serif;
+
+}
+
+.spotify{
+    display: flex;
 }
 
 body{
-    font-size: 12px;
+    background-color: #212121;
+    height: 100vh;
+    width: 100vw;
+
 }
 
-.section1{
-    display: flex;
-    /* justify-content: space-between; */
-    background-color: #202020;
-    color: white;
-}
-.top{
-    display: flex;
-    /* flex-direction: row; */
-    justify-content: space-between;
-    width: 1100px;
-    height: 40px;
-    /* border: 2px solid white; */
-}
-
-/* #btn{
-    height: 30px;
-    width: 100px;
-    background-color: black;
-    position: absolute;
-    border-radius: 40px;
-    top:10px;
-    right: 20px;
-} */
-#leftright{
-    width: 80px;
-    padding: 20px;
-}
-
-#angel{
-
-    /* width: 30px; */
-    border-radius: 50%;
-    /* top:20px;
-    margin: 20px; */
-}
-.angel img{
-    display: flex;
-    /* flex-direction: column; */
-    /* justify-content:space-between ; */
-    align-items: center;
-    margin-top: 10px;
-    height: 30px;
-    margin-right: 20px;
-    overflow: hidden;
-    /* border: 2px solid white; */
-}
-.angel{
-    /* border: 2px solid white; */
-    display: flex;
-    /* flex-shrink: ; */
-    overflow:visible;
-    justify-content: center;
-    margin-right: 0;
-    /* width:30px; */
-}
-.div1 .div2 .div3{
-    width: 10px;
-}
-
-
+/* sidebar starts here */
 .side{
-    /* position: fixed; */
-    background-color: black;
     display: flex;
     flex-direction: column;
-    width: 300px;
-    height: 101vh;
-
-
-}
-.spotifylogo img{
-    width: 100px;
-    height: auto;
     padding: 20px;
-}
-/* ,.spotifylogo{
-    /* padding: 20px; */
-
-.main{
-    background-color: #202020;
-    /* width: 100vh;
-    height: 100vh; */
-}
-/* 
-.top div img{
-    z-index: 10;
-} */
-
-.sidecontent div img{
-    width: 20px;
-    margin:0 10px 0 10px;
-
+    /* height: 95vh; */
+    width: 20vw;
+    background-color: black;
+    /* justify-content: space-around; */
+    gap: 5%;
 
 }
-.sidecontent div p{
-    font-size: 14px;
+
+.logo img:first-child{
+ width: 70%;
 }
-.content{
-    /* margin:0 10px 0 10px; */
-    padding: 8px;
+
+.imgcontent{
     display: flex;
-    /* justify-content: space-evenly; */
-}
-.sidecontent{
     align-items: center;
+    gap: 15px;
 }
 
-.types{
-    padding: 8px;
+.content1,.content2,.content3{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.imgcontent img{
+    width: 10%;
 }
 
 .install{
     display: flex;
-    align-items: center;
-    /* justify-content: space-around; */
+    gap: 15px;
 }
+
 .install img{
-    width: 20px;
-    margin: 20px 10px;
+    width: 10%;
 }
 
-.goodmorning{
-    margin:50px 0 10px 20px;
+
+/* main section starts */
+.main{
+    width: 100%;
+    /* height: 80%; */
+    /* background-color:  #171717; */
+    background-color: #202020;
 }
 
-.button button{
-    background-color: #303030;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    border: none;
-    /* justify-content: space-between; */
-    width: 250px;
-    color: white;
-
-    /* height: 40px; */
-    margin: 10px;
-}
-
-.button{
-    display: flex;
-    /* align-items: center; */
-    justify-content: space-between;
-    margin-bottom: 20px;
-    /* width: 500px; */
-    /* height: 80px; */
-}
-.playlists{
+/* navigation bar starts */
+.nav{
     display: flex;
     flex-wrap: wrap;
-
-}
-
-.button img{
-    /* align-items: center; */
-    /* padding: 5px; */
-    width: 70px;
-    height: 60px;
-    margin-right: 10px;
-}
-
-.button p{
-    display: flex;
+    justify-content: space-between;
     align-items: center;
-    color: white;
+    height: 10%;
+    padding: 0 3%;
+    margin-bottom: 2%;
+    width: 90%;
 }
 
-.box{
-    display: flex;
-    flex-wrap: nowrap;
-    /* justify-content:; */
-}
-.insidediv img{
-    width: 100px;
-    margin: 20px;
-}
 
-.insidediv{
-    margin: 0 15px 0px 14px;
-    background-color: #181818;
-    width: 160px;
-    height: 200px;
-}
-h4{
-    padding-left: 10px;
-}
-.insidediv p{
-    padding: 2px;
-    padding-left: 40px;
-    font-size: small;
-}
-
-.play{
+.nav img{
     width: 100%;
-    top:0;
-    background-color: #181818;
+}
+
+
+.btn img:last-child{
+    border-radius: 40px;
+}
+
+.btn{
+    width: 10%;
+}
+.leftright{
+    width: 8%;
+}
+
+.btn{
+    position: relative;
+}
+
+.picdrop{
     display: flex;
     justify-content: space-between;
-    height: 70px;
     align-items: center;
-    position: sticky;
-    /* bottom:0; */
-    /* width: 1000px; */
+    padding: 2px;
 }
-.divleft{
+#img-1{
+    border-radius: 50%;
+    position: relative;
+    gap: 10px;
+    width: 25px;
+    z-index: 5;
+
+}
+#img-2{
+    position: relative;
+    width: 20%;
+    z-index: 5;
+
+}
+#black{
+    position: absolute;
+}
+
+.picdrop p{
+    z-index: 3;
+}
+
+/* body part of main div */
+
+.body{
+    padding:0 3%;
+}
+
+
+/* good morning heading */
+.head h3{
+    margin-bottom: 2%;
+    font-size: 1.4rem;
+}
+
+/* tabs sections start */
+.tabs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 0 0 3% 0;
+}
+
+.tabs div{
     display: flex;
     align-items: center;
-}
-#image1{
-    width: 80px;
-    height: 50px;
-    padding: 10px 20px;
-}
-#image2{
-    width: 20px;
-    height: 30px;
+    width: 23%;
+    border-radius: 3px;
+    background-color: #303030;
 }
 
-
-.divmiddle img{
-    display: flex;
-    align-items: center;
-    width: 400px;
+.tabs div img{
+    width: 25%;
+    margin-right: 5%;
+    border-radius: 3px 0 0 3px;
 }
 
-.divright img{
-    display: flex;
-    align-items: center;
-    width: 300px;
+/* cards section starts */
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(6,150px);
+    gap: 1%;
 }
 
-.green{
-    color: black;
-    background-color: #1ED760;
+.card{
+    padding: 8%;
+    background-color: #181818;
 }
 
-.green p{
-    margin-left: 1000px;
-
+.card img{
+    width: 100%;
 }
-/* 
-#likedsong{
+
+.card>h4{
+    padding: 1px 0;
+    font-size: 0.9rem;
+}
+.card>p{
+    font-size: 0.8rem;
+}
+
+.mightlike h3{
+    padding-bottom: 2%;
+}
+
+/* footer{
     position: absolute;
 } */
-#heartinside{
-    position: absolute;
+
+
+.ft1{
+    padding: 1%;
+    background-color: #181818;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#leftimg1{
+    width: 50px;
+}
+
+#leftimg2{
+    width: 15px;
+}
+
+#middle{
+    width: 450px;
+}
+
+#right{
+    width: 230px;
+}
+
+.ft2{
+    background-color: #1ED760;
+    width: 100%;
+    /* position: fixed; */
+    /* bottom: 0; */
+}
+
+.ft2 p{
+    padding: 2px 20px;
+    text-align: right;
+    color: black;
+    
+}
+
+footer{
+    width: 100vw;
+    /* position: absolute; */
+    /* z-index: 2; */
+    bottom: 0;
+}
+
+#menu{
+    display: none;
+}
+
+#cross{
+    display: none;
+}
+
+
+@media screen and (max-width: 1440px){
+    .content1,.content2,.content3{
+        gap: .75rem;
+    }
+    .mightlike{
+        font-size: 1.2rem;
+        margin: 1rem 0 1rem 0;
+    }
+}
+
+@media screen and (max-width: 1024px){
+
+    body{
+        width: 100vw;
+        height: 100vh;
+        /* overflow-y: hidden; */
+    }
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        gap: 1%;
+    }
+    .card{
+        /* padding: 8%; */
+        margin: 0 auto;
+        background-color: #181818;
+    }
+    
+    .card img{
+        width: 100%;
+    }
+    
+    .card>h4{
+        padding: 1px 0;
+        font-size: 0.9rem;
+    }
+    .card>p{
+        font-size: 0.8rem;
+    }
+    .side{
+        height: 100vh;
+    }
+    footer{
+        width: 100vw;
+        position: relative;
+        bottom: 0;
+    }
+
+}
+
+@media screen and (max-width: 769px) {
+    .cards{
+        flex-wrap: wrap;
+    }
+    .left{
+        gap: 10px;
+    }
+    
+    #leftimg1{
+        width: 30px;
+    }
+    .left p{
+        font-size: 12px;
+    }
+    
+    #leftimg2{
+        width: 15px;
+    }
+    
+    #middle{
+        width: 250px;
+    }
+    
+    #right{
+        width: 120px;
+    }
+    .side{
+        /* height: 100vh; */
+        font-size: 14px;
+        padding: 10px;
+    }
+    .logo img{
+        /* top: 0; */
+        width: 60%;
+    }
+    .imgcontent{
+        gap: 12px;
+    }
+    .content1,.content2,.content3{
+        gap: 5px;
+    }
+    .install{
+        gap: 10px;
+    }
+    footer{
+        position: absolute;
+    }
+    .tabs div p{
+        font-size: 12px;
+    }
+    .mightlike h3{
+        font-size: 16px;
+        padding-bottom: 1%;
+    }
+    .Angel{
+        font-size: 10px;
+    }
+    .black{
+        width: 16px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .side{
+        display: none;
+        position: fixed;
+        z-index: 10;
+        height: 100vh;
+        width: 35%;
+    }
+    #cross{
+        display: block;
+    }
+    .card h4{
+        font-size: 12px;
+    }
+    .cards{
+        grid-template-columns: repeat(3,1fr);
+    }
+    footer{
+        /* bottom: 0; */
+        position: relative;
+        width: 100vw;
+    }
+    .ft1{
+        padding: 2%;
+    }
+    .left{
+        gap: 7px;
+    }
+    #leftimg1{
+        width: 25px;
+    }
+    #leftimg2{
+        width: 10px;
+    }
+    #middle{
+        width: 180px;
+    }
+    #right{
+        width: 80px;
+    }
+    .ft2 p{
+        font-size: 10px;
+    }
+    .left p{
+        font-size: 8px;
+    }
+    .left h5{
+        font-size: 8px;
+    }
+    .tabs{
+        width: 90vw;
+    }
+    .tabs div{
+        width: 30%;
+    }
+    .leftright img:first-child{
+        display: none;
+    }
+    #menu{
+        display: block;
+        width: 80%;
+    }
+    .show{
+        display: flex;
+    }
+    .logo{
+        display: flex;
+        justify-content: space-between;
+    }
+    #cross{
+        width: 10%;
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .tabs div p{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .tabs{
+        /* font-size: 8px; */
+        width: 95vw;
+    }
+    .tabs div p{
+        font-size: 8px;
+    }
+    .left{
+        gap: 5px;
+    }
+    #leftimg1{
+        width: 20px;
+    }
+    #leftimg2{
+        width: 10px;
+    }
+    #middle{
+        width: 120px;
+    }
+    #right{
+        width: 80px;
+    }
+    .ft1{
+        gap: 5%;
+    }
+    .ft2 p{
+        font-size: 8px;
+    }
+    .left p{
+        font-size: 5px;
+    }
+    .left h5{
+        font-size: 8px;
+    }
+    .side{
+        width: 50%;
+    }
 }
